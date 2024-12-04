@@ -1,0 +1,346 @@
+body {
+  font-family: "Trip Sans Med", sans-serif;
+}
+.container {
+  width: 1135px;
+  margin: auto;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 18px;
+}
+/* ==== header ==== */
+header {
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #eeeeee;
+  position: fixed;
+  top: 0; /* Positions it at the top of the viewport */
+  left: 0; /* Ensures it starts from the left edge */
+  right: 0; /* Ensures it extends to the right edge */
+  z-index: 1000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header img {
+  width: 190px;
+  height: auto;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+}
+button:hover {
+  background: #f2f2f2;
+}
+.blk-button {
+  background-color: black;
+  color: white;
+}
+header nav i {
+  margin-right: 6px;
+}
+/* =========== title =========== */
+h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: #ff5d5d;
+  line-height: 70px;
+}
+a {
+  color: black;
+}
+span {
+  text-decoration: underline;
+}
+.title p {
+  font-family: "Trip Sans Reg";
+  font-size: 14px;
+  margin-top: 10px;
+}
+.title {
+  height: 120px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+/* ============= menu bar ============ */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 26px;
+}
+.menu-bar > button {
+  font-size: 16px;
+  text-align: left;
+  width: 80px;
+  height: 65px;
+  background-color: white;
+  border: 1px solid black;
+  flex: 1;
+  padding: 12px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-bar > button:hover {
+  background-color: black;
+  color: white;
+}
+/* ============= 3photos ============ */
+.photos {
+  height: 430px;
+  display: flex;
+  gap: 2px;
+}
+.photos > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.photos img {
+  flex: 1;
+  object-fit: cover;
+}
+.photos > div img {
+  height: calc(50%);
+  width: 100%;
+}
+/* =========== city =========== */
+.city {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.city > div span,
+p {
+  font-size: 12px;
+  color: #545454;
+  text-decoration: none;
+}
+.city > span:hover {
+  text-decoration: underline;
+}
+.city i {
+  transform: scale(0.65);
+  vertical-align: middle;
+}
+/* =========== description =========== */
+.description {
+  height: 470px;
+  display: flex;
+  margin-top: 45px;
+  gap: 80px;
+}
+.part1 {
+  line-height: 24px;
+}
+.part1 p {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 45px;
+  letter-spacing: -0.4;
+}
+.part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 120px);
+  background-color: #ff5d5d;
+  border-radius: 15px;
+}
+.part2 img {
+  width: 427.5px;
+  border-radius: 0 0 15px 15px;
+}
+.part2 h3 {
+  padding: 25px;
+}
+.part2 p {
+  font-size: 16px;
+  font-family: "Trip Sans Reg";
+  color: black;
+  padding-left: 30px;
+  line-height: 20px;
+}
+.part2 button {
+  background-color: black;
+  font-size: 16px;
+  border: none;
+  color: white;
+  box-shadow: none !important;
+  text-align: center;
+  width: 154px;
+  height: 54px;
+  border-radius: 15px;
+  margin: 28px;
+}
+/* =========== immanquables =========== */
+.divertir h2 {
+  margin-top: 60px;
+}
+.text {
+  flex: 1;
+  width: 296.25px;
+  padding-right: 30px;
+}
+.col1 {
+  display: flex;
+}
+.col1 a {
+  font-family: "Trip Sans Reg";
+  font-size: 16px;
+}
+.col1 p {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 30px 0;
+}
+.scroll-photo {
+  display: flex;
+  flex: 3;
+  overflow: auto;
+  /* flex-direction: row; */
+  scrollbar-width: none; /* For Firefox */
+  gap: 15px;
+}
+.scroll-photo::-webkit-scrollbar {
+  display: none;
+} /* For chrome and safari */
+
+.scroll-photo p {
+  font-family: "Trip Sans Reg";
+  font-size: 14px;
+  padding: 0;
+}
+.scroll-photo img {
+  width: 275px;
+  height: 190px;
+}
+.image-set {
+  position: relative;
+}
+.image-set i {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+  top: 10px;
+  right: 10px;
+}
+.image-set img:last-child {
+  width: 30px;
+  height: 40px;
+  border-radius: 50px 50px 15px 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+}
+.rate i {
+  color: #04aa6c;
+  font-size: 14px;
+  padding: 10px 0;
+  padding-right: 3px;
+}
+.rate {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.rate p {
+  margin-left: 6px;
+  padding: 6px 0;
+}
+.single-photo h5 {
+  padding-top: 5px;
+}
+/* =========== visit =========== */
+.visit {
+  margin-top: 110px;
+}
+.visit h3 {
+  margin-bottom: 30px;
+}
+.carrousel {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+.guide-set {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.guide-set img {
+  width: 100%;
+  height: auto;
+  max-height: 235px;
+  object-fit: cover;
+}
+.guide-set h5 {
+  margin: 10px 0;
+}
+.guide-set p {
+  font-family: "Trip Sans Reg";
+  font-size: 14px;
+}
+.icon {
+  display: flex;
+  margin-top: 10px;
+}
+.icon img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+/* =========== footer =========== */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf1ed;
+  height: 156px;
+  margin-top: 100px;
+}
+footer img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  padding-right: 10px;
+}
+footer a {
+  text-decoration: none;
+}
