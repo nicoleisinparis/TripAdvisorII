@@ -128,7 +128,7 @@ span {
   object-fit: cover;
 }
 .photos > div img {
-  height: calc(50%);
+  height: calc(50% - 2px);
   width: 100%;
 }
 /* =========== city =========== */
